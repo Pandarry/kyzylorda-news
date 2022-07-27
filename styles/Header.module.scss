@@ -1,0 +1,43 @@
+@import 'var.scss';
+
+.header {
+    background: #FFFFFF;
+    font-weight: 600;
+}
+
+.header__top {
+    border-bottom: 1px solid #E7E8EC;
+}
+
+.header__bot {
+    margin: 19px 0;
+}
+
+.icons {
+    padding-right: 33px;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29.26px;
+}
+
+.header__border {
+    border: 1px solid #F0F2F5;
+    background: #F0F2F5;
+    border-radius: 10px;
+    padding: 15px 20px;
+        &:not(:last-child) {
+            margin-right: 11px;
+        }
+}
+
+
+.currency {
+    font-size: 14px;
+    line-height: 17.07px;
+        &:not(:last-child) {
+            margin-right: 19px;
+        }
+}
