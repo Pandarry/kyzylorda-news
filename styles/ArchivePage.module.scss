@@ -1,0 +1,20 @@
+@import 'var.scss';
+
+.flex_container {
+    display: flex;
+}
+
+.column {
+    display: flex;
+}
+
+.banner {
+    background: $color-blue;
+    color: #FFFFFF;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 292px 142px;
+}

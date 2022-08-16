@@ -1,0 +1,68 @@
+@import 'var.scss';
+
+.category {
+
+    margin-top: 20px;
+    margin-bottom: 23px;
+
+    button {
+        background: #FFFFFF;
+        border: 1px solid $color-blue;
+        border-radius: 50px;
+        color: $color-blue;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+        padding: 7px 15px;
+        margin-right: 20px;
+            &:hover{
+                background-color: $color-blue;
+                color: #FFFFFF;
+            }
+    }
+
+    span {
+        color: #838B98;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+
+.container {
+    h2 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        color: $color-title;
+        margin-bottom: 18px;
+    }
+
+    h3 {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        color: $color-title;
+        margin-bottom: 21px; 
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 29px;
+        color: $color-subtitle;
+        margin-bottom: 20px;
+    }
+
+    a {
+        color: $color-blue;
+        text-decoration-line: underline;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 16px;
+        display: block;
+        cursor: pointer;
+    }
+}
+

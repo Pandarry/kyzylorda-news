@@ -1,0 +1,38 @@
+@import 'var.scss';
+
+.menu {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 50px;
+    left: 0;
+    transform: translateX(-130%);
+}
+
+.menu_active {
+    transform: translateX(0);
+}
+
+.blur {
+    width: 100vw;
+    height: 100vh;
+    left: 30%;
+    backdrop-filter: blur(2px);
+    position: absolute;
+}
+
+.menuContent {
+    width: 30%;
+    height: 100%;
+    background-color: rosybrown;
+    display: fle;
+    flex-direction: column;
+
+    ul {
+        text-align: start;
+    }
+}
+
+.burgerBtn {
+    margin-right: 31px;
+}

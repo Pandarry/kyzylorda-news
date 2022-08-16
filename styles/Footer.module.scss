@@ -1,0 +1,72 @@
+@import 'var.scss';
+
+.footer {
+    background: #090909;
+    color: #FFFFFF;
+    padding: 1.875rem 10.75rem;
+}
+
+.footerColumn {
+    width: 25%;
+
+    span {
+        font-weight: 800;
+        font-size: 1.125rem;
+        line-height: 1.375rem;
+        letter-spacing: 0.28em;
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
+
+    h3 {
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        margin-bottom: 1.875rem;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 1.0625rem;
+    }
+
+    a {
+        text-decoration-line: underline;
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 1.0625rem;
+        color: $color-blue;
+        display: inline-block;
+        margin-bottom: 1rem;
+        cursor: pointer;
+    }
+
+    li {
+        list-style-type: none;
+    }
+}
+
+.rights {
+    span {
+        font-weight: 300;
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
+        letter-spacing: 0.02em;
+    }
+}
+
+.icons {
+
+    display: flex;
+
+    a {
+        margin-right: 30px;
+    }
+}

@@ -1,0 +1,124 @@
+@import 'var.scss';
+
+.column_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column1 {
+
+    padding-left: 154px;
+    max-width: 873px;
+
+    div {
+        margin-bottom: 30px;
+    }
+
+
+    h1 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        color: $color-title;
+        margin-bottom: 40px;
+    }
+
+    h2 {
+        font-size: 32px;
+        line-height: 39px;
+        margin-bottom: 40px;
+    }
+
+    h3 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 16px;
+    }
+}
+
+.publishDate {
+
+    display: flex;
+    justify-content: space-between;
+
+    button {
+        background: #FFFFFF;
+        border: 1px solid $color-blue;
+        border-radius: 50px;
+        color: $color-blue;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+        padding: 7px 15px;
+        margin-right: 20px;
+            &:hover{
+                background-color: $color-blue;
+                color: #FFFFFF;
+            }
+    }
+
+    span {
+        color: #838B98;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+
+.imageBox {
+    p {
+        margin-top: 15px;
+        // margin-bottom: 30px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #838B98;
+    }
+}
+
+.column2 {
+    max-width: 496px;
+}
+
+.column_content {
+    border: 1px solid #E7E9EC;
+    border-radius: 10px;
+    background: #FAFBFD;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.banner {
+    background: $color-blue;
+    color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    max-height: 527px;
+}
+
+.hashtags {
+    ul {
+        list-style: none;
+        display: flex;
+    }
+
+    li {
+        margin-right: 20px;
+    }
+}
+
+.readAlso {
+    display: flex;
+}
+

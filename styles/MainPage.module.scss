@@ -7,21 +7,74 @@
 .content__box {
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    background: #F3F3F3;
+     &:not(:last-child) {
+        margin: 30px 0;
+     }
 }
 
 .news__column {
     background: #FFFFFF;
-    width: 32%;
+    width: 29%;
     padding: 24px;
+    align-items: center;
+    align-content: stretch;
+    border-radius: 10px;
 }
 
-.banner_box {
-    max-width: 464px;
+.news__column2 {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    padding: 24px;
+    width: 49%;
+    border-radius: 10px;
+}
+
+.news__column3 {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 24px;
+    margin-right: 24px;
+    margin-bottom: 24px;
+}
+
+.news__column2Item {
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+        color: $color-blue;
+        font-size: 32px;
+        line-height: 39px;
+        text-decoration-line: underline;
+        margin-bottom: 24px;
+    }
+}
+
+.news__column3Item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 34px;
+}
+
+.categoryList {
+    display: flex;
+    align-items: center;
+    a {
+        text-decoration-line: underline;
+        color: $color-blue;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        cursor: pointer;      
+    }
 }
 
 .column__content {
-    h1 {
+    h2 {
         margin-bottom: 24px;
         font-weight: 700;
         font-size: 32px;
@@ -31,5 +84,39 @@
 
 .column__content2 {
     display: flex;
-    width: 100%;
+}
+
+.spaceBetweenNewsForm {
+    &:not(:last-child) {
+        margin-right: 34px;
+    }
+}
+
+.our_choice {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    
+    h3 {
+        color: $color-blue;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        text-decoration-line: underline;
+    }
+}
+
+.news__column1 {
+    min-width: 632px;
+}
+
+.allNewsBtn {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: $color-blue;
+    text-decoration-line: underline;
+    cursor: pointer;
 }

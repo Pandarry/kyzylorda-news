@@ -52,7 +52,6 @@ svg {
 .container {
     max-width: 1640px;
     margin: 0 auto;
-    padding: 0 140px;
 }
 
 .flex__container {
@@ -61,7 +60,7 @@ svg {
     justify-content: space-between;
 }
 
-.container-items {
+.flex__container-items {
     display: flex;
     align-items: center;
     padding: 20px 0;
@@ -69,92 +68,27 @@ svg {
 
 .advBanner {
     background: $color-blue;
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    padding: 57px 450px;
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 26px;
+    color: #FFFFFF;
     width: 100%;
-}
-
-.categoryBtn {
-    background: #FFFFFF;
-    border: 1px solid $color-blue;
-    border-radius: 50px;
-    color: $color-blue;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 15px;
-    padding: 7px 15px;
-    margin-right: 20px;
-        &:hover{
-            background-color: $color-blue;
-            color: #FFFFFF;
-        }
-}
-
-.news_category {
-    margin-top: 30px;
-    margin-bottom: 23px;
-}
-
-.chooseCategoryBtn {
-    background: #E6EBF0;
+    height: 100%;
     border-radius: 10px;
-    padding: 10px 15px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    margin-bottom: 32px;
-        &:not(:last-child) {
-            margin-right: 15px;
-        }
-        &:hover {
-            color: #FFFFFF;
-            background: $color-blue;
-        }
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.publishTime {
-    color: #838B98;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
+.advBanner1 {
+    @extend .advBanner;
+    padding: 56px 450px;
 }
 
-.readMore {
-    color: $color-blue;
-    text-decoration-line: underline;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    padding-bottom: 20px;
+.advBanner2 {
+    @extend .advBanner;
+    max-height: 527px;
 }
 
-.mainTitle {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    color: $color-title;
-    margin-bottom: 18px;
+.advBanner3 {
+    @extend .advBanner;
+    padding: 280px 0px;
 }
 
-.secondaryTitle {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
-    color: $color-title;
-    margin-bottom: 21px;
-}
-
-.subtitle {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 29px;
-    color: $color-subtitle;
-    margin-bottom: 20px;
-}
