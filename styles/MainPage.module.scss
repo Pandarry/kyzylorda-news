@@ -4,7 +4,7 @@
     background: #F3F3F3;
 }
 
-.content__box {
+.contentBox {
     display: flex;
     justify-content: space-between;
     background: #F3F3F3;
@@ -13,7 +13,7 @@
      }
 }
 
-.news__column {
+.contentBoxElem {
     background: #FFFFFF;
     width: 29%;
     padding: 24px;
@@ -22,7 +22,7 @@
     border-radius: 10px;
 }
 
-.news__column2 {
+.newsColumn {
     display: flex;
     flex-direction: column;
     background: #FFFFFF;
@@ -31,17 +31,7 @@
     border-radius: 10px;
 }
 
-.news__column3 {
-    display: flex;
-    flex-direction: column;
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    padding: 24px;
-    margin-right: 24px;
-    margin-bottom: 24px;
-}
-
-.news__column2Item {
+.newsColumnItem {
     display: flex;
     justify-content: space-between;
 
@@ -52,28 +42,57 @@
         text-decoration-line: underline;
         margin-bottom: 24px;
     }
+
+    .item {
+        width: calc(50% - 12px);
+    }
 }
 
-.news__column3Item {
+.categoryNews {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 24px;
+    margin: 0 24px 24px 0;
+}
+
+.categoryNewsItem {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 34px;
+}
+
+.categoryNewsItemWidth {
+    width: 24%;
 }
 
 .categoryList {
     display: flex;
     align-items: center;
-    a {
+    margin-bottom: 34px;
+    button {
         text-decoration-line: underline;
         color: $color-blue;
         font-weight: 700;
         font-size: 14px;
         line-height: 17px;
-        cursor: pointer;      
+        cursor: pointer;    
     }
 }
 
-.column__content {
+.readMoreBtn {
+    display: flex;
+    align-items: center;
+
+    svg {
+        width: 8px;
+        height: auto;
+        margin-left: 12px;
+    }
+
+}
+
+.contentBoxElemContent {
     h2 {
         margin-bottom: 24px;
         font-weight: 700;
@@ -82,21 +101,28 @@
     }
 }
 
-.column__content2 {
+.columnContent {
     display: flex;
 }
 
-.spaceBetweenNewsForm {
+.columnContentElem {
     &:not(:last-child) {
         margin-right: 34px;
     }
 }
 
-.our_choice {
+.thirdColumn {
+    background: none;
+    padding: 0;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 24px;
-    
+}
+
+.thirdColumnContent {   
+    background: #FFFFFF; 
+    padding: 24px;
+    border-radius: 10px;
     h3 {
         color: $color-blue;
         font-weight: 700;
@@ -106,7 +132,13 @@
     }
 }
 
-.news__column1 {
+.ourChoice {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.mainNewsColumn {
     min-width: 632px;
 }
 

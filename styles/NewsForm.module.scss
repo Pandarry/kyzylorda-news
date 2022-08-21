@@ -30,20 +30,33 @@
 }
 
 .container {
+
+    color: $color-title;
+    
     h2 {
         font-weight: 700;
         font-size: 24px;
         line-height: 29px;
         color: $color-title;
         margin-bottom: 18px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
     }
 
     h3 {
         font-weight: 700;
         font-size: 18px;
         line-height: 22px;
-        color: $color-title;
-        margin-bottom: 21px; 
+        // color: $color-title;
+        margin-bottom: 21px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 5;
+        display: -webkit-box;
+        -webkit-box-orient: vertical; 
     }
 
     p {
@@ -64,5 +77,37 @@
         display: block;
         cursor: pointer;
     }
+
+    .imgStyle {
+        border-radius: 10px;
+    }
+}
+
+.withStyle {
+    @extend .container;
+    width: 32%;
+    
+    h3 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 4;
+        display: -webkit-box;
+        -webkit-box-orient: vertical; 
+    }
+
+    // .imgBox {
+    //     max-width: 530px;
+    //     max-height: 270px;
+    //     .imgStyle {
+    //         height: auto;
+    //         width: auto;
+    //     }
+    // }
+
+    
+}
+
+.articleText {
+    padding-right: 13%;
 }
 

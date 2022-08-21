@@ -89,6 +89,8 @@ svg {
 
 .advBanner3 {
     @extend .advBanner;
-    padding: 280px 0px;
+    height: auto;
+    min-width: 25%;
+    margin-bottom: 24px;
 }
 

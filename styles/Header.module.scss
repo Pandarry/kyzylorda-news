@@ -10,17 +10,17 @@
     }
 }
 
-.header__top {
+.headerTop {
     border-bottom: 1px solid #E7E8EC;
 }
 
-.header__bot {
+.headerBot {
     margin: 19px 0;
 }
 
 
 
-.header__borderBox {
+.borderBox {
     display: flex;
     align-items: center;
     border: 1px solid $color-gray;
@@ -49,7 +49,7 @@
     }
 }
 
-.borderBox_content {
+.borderBoxContent {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,6 +69,20 @@
         display: flex;
         align-items: center;
     }
+
+    svg {
+        width: 9px;
+        height: auto;
+        margin-left: 5px;
+    }
+
+    &:hover {
+        svg {
+            path {
+                fill: darkblue;
+            }
+        }
+    }
 }
 
 .icons {
@@ -85,12 +99,39 @@
     line-height: 1.81rem;
 }
 
+
+
 .weather {
-    display: flex;
-    // align-items: center;
-    // justify-content: center;
+    button {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.weatherSvg {
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+}
+
+
+.switchWeatherBtn {
+    width: 9px;
+    height: auto;
+    margin-left: 3px;
+
+    &:hover {
+        path {
+            fill: darkblue;
+        }
+    }
+
+}
+
+.burgerBtn {
+    margin-right: 25px;
 }
 
 .whatsapp {
-    margin-left: 0.93rem;
+    margin-left: 0.53rem;
 }

@@ -3,24 +3,25 @@
 .column_wrapper {
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
 }
 
 .column1 {
-
-    padding-left: 154px;
     max-width: 873px;
 
     div {
         margin-bottom: 30px;
     }
 
+}
 
+.newsArticle {
     h1 {
         font-weight: 700;
         font-size: 36px;
         line-height: 44px;
         color: $color-title;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
 
     h2 {
@@ -39,6 +40,8 @@
     p {
         font-weight: 400;
         font-size: 16px;
+        display: inline-block;
+        margin-bottom: 20px;
     }
 }
 
@@ -46,6 +49,7 @@
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     button {
         background: #FFFFFF;
@@ -68,6 +72,20 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 17px;
+    }
+}
+
+.views {
+    display: flex;
+    align-items: center;
+    
+    span {
+        margin-left: 10px;
+    }
+
+    svg {
+        width: 28px;
+        height: auto;
     }
 }
 
@@ -104,6 +122,11 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
+    max-height: 146px;
+}
+
+.bannerTwo {
+    @extend .banner;
     max-height: 527px;
 }
 
@@ -116,9 +139,39 @@
     li {
         margin-right: 20px;
     }
+
+    a {
+        color: $color-blue;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        cursor: pointer;
+        text-decoration: underline;
+    }
 }
 
-.readAlso {
+.alsoRead {
+    h2 {
+        display: inline-block;
+        margin-bottom: 35px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+    }
+}
+
+.alsoReadContent {
     display: flex;
+    justify-content: space-between;
 }
 
+.socialIcons {
+    display: flex;
+    flex-direction: column;
+    a {
+        background: #838B98;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
+}

@@ -1,0 +1,112 @@
+@import 'var.scss';
+
+.container {
+    background: #191919;
+}
+
+.white {
+    color: #FFFFFF;
+    
+    h3 {
+        color: #FFFFFF;
+    }
+}
+
+.flexContainer {
+    max-width: 1640px;
+    margin: 0 auto;
+}
+
+.contentBox {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 0;
+    height: 32%;
+}
+
+.contentBoxElem {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    h2 {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        text-decoration-line: underline;
+        color: #FFFFFF;
+    }
+
+    a {
+        color: $color-blue;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        text-decoration-line: underline;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.slider {
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+
+.mediaContent {
+    .container {
+
+        color: $color-title;
+        
+        h2 {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            color: $color-title;
+            margin-bottom: 18px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 2;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+        }
+    
+        h3 {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            // color: $color-title;
+            margin-bottom: 21px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 5;
+            display: -webkit-box;
+            -webkit-box-orient: vertical; 
+        }
+    
+        p {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 29px;
+            color: $color-subtitle;
+            margin-bottom: 20px;
+        }
+    
+        a {
+            color: $color-blue;
+            text-decoration-line: underline;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 16px;
+            display: block;
+            cursor: pointer;
+        }
+    
+        .imgStyle {
+            border-radius: 10px;
+        }
+    }
+}
+
