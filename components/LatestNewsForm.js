@@ -1,6 +1,7 @@
-import styles from '../styles/LatestNewsForm.module.scss';
+import styles from '../styles/latestNewsForm.module.scss';
+import { useState, useEffect } from 'react';
 import News from '../pages/data';
-import { CategoryBtn2 } from './CategoryBtn';
+import { LatestNewsBtn } from './categoryBtn';
 
 const LatestNewsForm = () => {
   return (
@@ -19,26 +20,27 @@ const LatestNewsForm = () => {
 
 export const LatestNewsBlock = (props) => {
   const alternativeStyle = props.styles;
-  //   const numberOfElem = props.numberOfElem;
+  const [latestNews, setLatestNews] = useState([]);
+  const numberOfElem = props.numberOfElem;
 
-  //   function LatestNewsFormAmount() {
-  //     for (let i = 0; i < numberOfElem; i++) {
-  //       return <LatestNewsForm />;
-  //     }
-  //   }
+  function LatestNewsFormAmount() {
+    let tempArray = [];
+    for (let i = 0; i < numberOfElem; i++) {
+      tempArray.push(<LatestNewsForm key={i} />);
+    }
+    setLatestNews(tempArray);
+  }
+
+  useEffect(() => {
+    LatestNewsFormAmount();
+  }, []);
 
   return (
     <div className={alternativeStyle ? styles.newsBlock : ''}>
       <div className={styles.categoryBlock}>
-        <CategoryBtn2 />
+        <LatestNewsBtn />
       </div>
-      {/* {LatestNewsFormAmount} */}
-      <LatestNewsForm />
-      <LatestNewsForm />
-      <LatestNewsForm />
-      <LatestNewsForm />
-      <LatestNewsForm />
-      <LatestNewsForm />
+      {latestNews}
       <div className={styles.allNewsBtn}>
         <a>Все новости</a>
       </div>

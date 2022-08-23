@@ -1,5 +1,5 @@
-import styles from '../styles/Multimedia.module.scss';
-import { NewsForm2 } from './NewsForm';
+import styles from '../styles/multiMedia.module.scss';
+import { NewsForm2 } from './newsForm';
 
 const Multimedia = () => {
   const MultimediaForm = (props) => {

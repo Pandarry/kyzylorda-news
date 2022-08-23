@@ -1,8 +1,4 @@
-import ArchivePage from './ArchivePage';
-import Header from './Header';
-import LatestNewsPage from './LatestNewsPage';
-import MainNews from './MainNews';
-import MainPage from './Mainpage';
+import Header from './header';
 
 const Layout = ({ children }) => {
   return (

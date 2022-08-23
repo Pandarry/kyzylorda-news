@@ -1,10 +1,10 @@
-import styles from '../styles/MainPage.module.scss';
+import styles from '../styles/mainPage.module.scss';
 import Link from 'next/link';
-import CategoryBtn, { CategoryBtn2 } from './CategoryBtn';
-import LatestNewsForm, { LatestNewsBlock } from './LatestNewsForm';
-import NewsForm, { NewsForm2 } from './NewsForm';
-import Footer from './Footer';
-import Multimedia from './Multimedia';
+import CategoryBtn, { CategoryBtn2 } from './categoryBtn';
+import LatestNewsForm, { LatestNewsBlock } from './latestNewsForm';
+import NewsForm, { NewsForm2 } from './newsForm';
+import Footer from './footer';
+import Multimedia from './multiMedia';
 
 const MainPage = () => {
   const NewsColumn = (props) => {

@@ -1,4 +1,4 @@
-import styles from '../styles/CategoryBtn.module.scss';
+import styles from '../styles/categoryBtn.module.scss';
 
 const CategoryBtn = () => {
   const categoryList = [
@@ -21,16 +21,16 @@ const CategoryBtn = () => {
   );
 };
 
-export const CategoryBtn2 = () => {
-  const categoryList2 = [
+export const LatestNewsBtn = () => {
+  const latestNewsBtnList = [
     { name: 'Последние', id: 1 },
     { name: 'Самые читаемые', id: 2 },
   ];
 
   return (
     <div>
-      {categoryList2.map((category) => (
-        <button className={`${styles.button} ${styles.button2}`} key={category.id}>
+      {latestNewsBtnList.map((category) => (
+        <button className={`${styles.button} ${styles.anotherBtn}`} key={category.id}>
           {category.name}
         </button>
       ))}

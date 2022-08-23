@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import styles from '../styles/NewsForm.module.scss';
+import styles from '../styles/newsForm.module.scss';
 import News from '../pages/data';
 
 const NewsForm = () => {

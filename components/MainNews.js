@@ -1,8 +1,7 @@
 import Image from 'next/dist/client/image';
-import styles from '../styles/MainNews.module.scss';
-import CategoryBtn, { CategoryBtn2 } from './CategoryBtn';
-import LatestNewsForm, { LatestNewsBlock } from './LatestNewsForm';
-import { NewsForm2 } from './NewsForm';
+import styles from '../styles/mainNews.module.scss';
+import LatestNewsForm, { LatestNewsBlock } from './latestNewsForm';
+import { NewsForm2 } from './newsForm';
 
 export default function MainNews() {
   const img = '/img/image3.png';
@@ -125,7 +124,7 @@ export default function MainNews() {
     <section>
       <div className="container">
         <div className="advBanner1">Рекламный баннер</div>
-        <div className={styles.column_wrapper}>
+        <div className={styles.columnWrapper}>
           <div className={styles.socialColumns}>
             <div className={styles.socialIcons}>
               <a>
@@ -171,15 +170,15 @@ export default function MainNews() {
               </a>
             </div>
           </div>
-          <div className={styles.column1}>
+          <div className={styles.mainNewsColumn}>
             <NewsArticle />
             <div className={styles.banner}>Рекламный баннер</div>
             <NewsArticle />
           </div>
-          <div className={styles.column2}>
-            <LatestNewsBlock styles="true" />
+          <div className={styles.latestNewsColumn}>
+            <LatestNewsBlock styles="true" numberOfElem={6} />
             <div className={styles.bannerTwo}>Рекламный баннер</div>
-            <div className={styles.column_content}>
+            <div className={styles.columnContent}>
               <div>
                 <LatestNewsForm />
                 <LatestNewsForm />

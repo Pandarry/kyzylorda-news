@@ -1,14 +1,11 @@
-import styles from '../styles/Header.module.scss';
+import styles from '../styles/header.module.scss';
 import { useState } from 'react';
-import BurgerBtn from './Menu';
 import Image from 'next/image';
 import IG from '../public/icons/ig.svg';
 import FB from '../public/icons/facebook.svg';
 import YT from '../public/icons/youtube.svg';
-import weather from '../public/icons/weather.svg';
-import arrow from '../public/icons/arrow.svg';
 import whatsapp from '../public/icons/whatsapp.svg';
-import Menu from './Menu';
+import Menu from './menu';
 
 const Header = () => {
   const BurgerBtn = () => {

@@ -1,4 +1,4 @@
-import styles from '../styles/Menu.module.scss';
+import styles from '../styles/menu.module.scss';
 import Link from 'next/link';
 
 export default function Menu({ active, setActive }) {

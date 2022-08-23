@@ -1,6 +1,7 @@
-import MainNews from '../components/MainNews';
-import MainPage from '../components/Mainpage';
+import MainNews from '../components/mainNews';
+import MainPage from '../components/mainPage';
+import ArchivePage from '../components/archivePage';
 
 export default function Home() {
-  return <MainNews />;
+  return <MainPage />;
 }

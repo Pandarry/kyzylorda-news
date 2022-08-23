@@ -1,6 +1,6 @@
-import styles from '../styles/LatestNewsPage.module.scss';
-import { LatestNewsBlock } from './LatestNewsForm';
-import { NewsForm2 } from './NewsForm';
+import styles from '../styles/latestNewsPage.module.scss';
+import { LatestNewsBlock } from './latestNewsForm';
+import { NewsForm2 } from './newsForm';
 
 const LatestNewsPage = () => {
   return (
